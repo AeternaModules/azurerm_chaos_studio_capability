@@ -1,6 +1,6 @@
-variable "chaos_studio_capabilitys" {
+variable "chaos_studio_capabilities" {
   description = <<EOT
-Map of chaos_studio_capabilitys, attributes below
+Map of chaos_studio_capabilities, attributes below
 Required:
     - capability_type
     - chaos_studio_target_id
