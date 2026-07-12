@@ -1,3 +1,7 @@
+output "chaos_studio_capabilities_id" {
+  description = "Map of id values across all chaos_studio_capabilities, keyed the same as var.chaos_studio_capabilities"
+  value       = { for k, v in azurerm_chaos_studio_capability.chaos_studio_capabilities : k => v.id }
+}
 output "chaos_studio_capabilities_capability_type" {
   description = "Map of capability_type values across all chaos_studio_capabilities, keyed the same as var.chaos_studio_capabilities"
   value       = { for k, v in azurerm_chaos_studio_capability.chaos_studio_capabilities : k => v.capability_type }
